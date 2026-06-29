@@ -5,9 +5,21 @@ import { highlights, education } from "../../data/content.js";
 import "./About.css";
 
 const cards = [
-  { Icon: FiCode, title: "Web Development", text: "Designing and building fast, accessible web apps with React, Next.js, and TypeScript." },
-  { Icon: FiCpu, title: "Backend & APIs", text: "Robust REST and GraphQL APIs powered by Node.js, with thoughtful DB and caching strategy." },
-  { Icon: FiTarget, title: "Problem Solving", text: "DSA-driven thinking applied to real product problems — performance, UX, and reliability." },
+  {
+    Icon: FiCode,
+    title: "Full Stack Development",
+    text: "Building responsive, production-ready web applications using React.js, Node.js, Express.js, MongoDB, MySQL, and modern JavaScript."
+  },
+  {
+    Icon: FiCpu,
+    title: "Backend & Cloud",
+    text: "Developing secure REST APIs with JWT authentication, email verification, file uploads, and deploying scalable applications on AWS and Vercel."
+  },
+  {
+    Icon: FiTarget,
+    title: "Problem Solving",
+    text: "Strengthening Data Structures & Algorithms with Java while creating efficient, clean, and user-focused software solutions."
+  },
 ];
 
 const fadeUp = {
