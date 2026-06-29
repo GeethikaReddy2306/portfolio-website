@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX, HiMoon, HiSun } from "react-icons/hi";
-import { useTheme } from "../../context/ThemeContext.jsx";
+import { useTheme } from "../../Context/ThemeContext.jsx";
 import { personal } from "../../data/personal.js";
 import "./Navbar.css";
-
 const links = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
