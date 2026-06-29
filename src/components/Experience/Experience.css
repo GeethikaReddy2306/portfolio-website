@@ -1,0 +1,67 @@
+.timeline {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.timeline-line {
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 18px 40px;
+}
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+.timeline-dot {
+  position: absolute;
+  top: 30px;
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  background: var(--grad-primary);
+  color: white;
+  border-radius: 50%;
+  border: 4px solid var(--bg-0);
+  box-shadow: 0 0 0 1px var(--border-strong), 0 0 30px rgba(168, 85, 247, 0.5);
+  z-index: 2;
+}
+.timeline-item.left .timeline-dot { right: -22px; }
+.timeline-item.right .timeline-dot { left: -22px; }
+
+.timeline-card {
+  padding: 24px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.timeline-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.timeline-period {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-2);
+  padding: 4px 10px;
+  background: var(--surface-strong);
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+.timeline-card h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.timeline-meta {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  font-size: 0.85rem; color: var(--text-soft);
+  margin-bottom: 12px;
+}
+.timeline-company { color: var(--accent); font-weight: 600; }
+.timeline-loc { display: inline-flex; align-items: center; gap: 4px; color: var(--text-muted); }
+.timeline-card ul { padding-left: 18px; }
+.timeline-card li { color: var(--text-soft); font-size: 0.92rem; margin-bottom: 4px; }
+
+@media (max-width: 768px) {
+  .timeline-line { left: 22px; }
+  .timeline-item { width: 100%; left: 0; padding: 18px 0 18px 60px; }
+  .timeline-item.right { left: 0; }
+  .timeline-item .timeline-dot { left: 0; right: auto; }
+}

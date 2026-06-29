@@ -1,0 +1,15 @@
+.back-top {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  width: 50px; height: 50px;
+  display: grid; place-items: center;
+  background: var(--grad-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  z-index: 60;
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.back-top:hover { box-shadow: 0 16px 40px rgba(236, 72, 153, 0.55); }
+@media (max-width: 600px) { .back-top { bottom: 18px; right: 18px; width: 44px; height: 44px; } }
