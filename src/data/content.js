@@ -1,9 +1,9 @@
 import {
-  SiJavascript, SiTypescript, SiPython, SiCplusplus, SiHtml5, SiCss,
-  SiReact, SiNextdotjs, SiTailwindcss, SiRedux, SiVite,
-  SiNodedotjs, SiExpress, SiNestjs, SiGraphql,
-  SiMongodb, SiPostgresql, SiMysql, SiFirebase,
-  SiDocker, SiVercel, SiGit, SiGithub, SiFigma, SiPostman,
+  SiJavascript, SiPython, SiCplusplus, SiHtml5, SiCss,
+  SiReact, SiTailwindcss, SiVite,
+  SiNodedotjs, SiExpress,
+  SiMongodb, SiMysql, SiFirebase,
+  SiVercel, SiGit, SiGithub, SiFigma, SiPostman,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 

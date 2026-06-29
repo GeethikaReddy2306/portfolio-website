@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiBookOpen, FiCode, FiCpu, FiTarget } from "react-icons/fi";
-import { personal, socials } from "../../data/personal.js";
+import { personal } from "../../data/personal.js";
 import { highlights, education } from "../../data/content.js";
 import "./About.css";
 

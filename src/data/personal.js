@@ -15,9 +15,9 @@ export const personal = {
   phone: "+91 9391584649",
 
   // CHANGE THIS: Path to your profile picture (place in /public or use a URL)
-  profileImage: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80",
+  profileImage: "/images/profile.png",
   // CHANGE THIS: Path to your secondary "about" image
-  aboutImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+  aboutImage: "/images/profilename.png",
   // CHANGE THIS: Link to your resume PDF (place in /public or use a URL)
   resume: "https://drive.google.com/file/d/1QreAqk9Gm_8I_R09yCRhMjqIE3-PFeWS/view?usp=sharing",
 };

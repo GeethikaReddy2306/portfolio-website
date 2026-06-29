@@ -51,10 +51,10 @@ export default function Projects() {
                   {/* CHANGE THIS: project image in src/data/content.js */}
                   <img src={p.image} alt={p.title} loading="lazy" />
                   <div className="proj-media-overlay">
-                    <a href={p.github} target="_blank" rel="noreferrer" className="proj-media-btn" aria-label="GitHub">
+                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="proj-media-btn" aria-label="GitHub">
                       <FiGithub />
                     </a>
-                    <a href={p.demo} target="_blank" rel="noreferrer" className="proj-media-btn" aria-label="Live demo">
+                    <a href={p.demo} target="_blank" rel="noopener noreferrer" className="proj-media-btn" aria-label="Live demo">
                       <FiExternalLink />
                     </a>
                   </div>
@@ -76,10 +76,10 @@ export default function Projects() {
                   </div>
 
                   <div className="proj-actions">
-                    <a className="btn btn-ghost btn-sm" href={p.github} target="_blank" rel="noreferrer">
+                    <a className="btn btn-ghost btn-sm" href={p.github} target="_blank" rel="noopener noreferrer">
                       <FiGithub /> Repository
                     </a>
-                    <a className="btn btn-primary btn-sm" href={p.demo} target="_blank" rel="noreferrer">
+                    <a className="btn btn-primary btn-sm" href={p.demo} target="_blank" rel="noopener noreferrer">
                       <FiExternalLink /> Live Demo
                     </a>
                   </div>

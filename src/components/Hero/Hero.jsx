@@ -108,7 +108,7 @@ export default function Hero() {
               View Projects
             </a>
             {/* CHANGE THIS: resume path is set in src/data/personal.js */}
-            <a className="btn btn-ghost" href={personal.resume} download>
+            <a className="btn btn-ghost" href={personal.resume} target="_blank" rel="noopener noreferrer">
               <FiDownload /> Download Resume
             </a>
             <a className="btn btn-outline" href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }}>
@@ -122,9 +122,9 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.85 }}
           >
-            <a href={socials.github} target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub /></a>
-            <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-            <a href={socials.email} aria-label="Email"><FiMail /></a>
+            <a href={socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FiGithub /></a>
+            <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href={`mailto:${personal.email}`} aria-label="Email"><FiMail /></a>
           </motion.div>
         </motion.div>
 

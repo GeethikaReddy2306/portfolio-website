@@ -21,10 +21,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-socials">
-          <a href={socials.github} target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
-          <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-          <a href={socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter"><FaTwitter /></a>
-          <a href={socials.email} aria-label="Email"><FiMail /></a>
+          <a href={socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
+          <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+          <a href={socials.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
+          <a href={`mailto:${personal.email}`} aria-label="Email"><FiMail /></a>
         </div>
       </div>
       <div className="footer-bottom container">

@@ -20,7 +20,7 @@ export default function Certificates() {
               key={c.title}
               href={c.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="cert-card glass"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

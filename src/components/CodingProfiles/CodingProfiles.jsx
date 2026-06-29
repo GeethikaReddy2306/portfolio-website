@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks, SiHackerrank, SiCodechef } from "react-icons/si";
 import { FiArrowUpRight } from "react-icons/fi";
 import { socials } from "../../data/personal.js";
 import "./CodingProfiles.css";
 
 const profiles = [
-  { name: "GitHub", handle: "@yourusername", Icon: FaGithub, color: "#ffffff", url: socials.github, accent: "rgba(255,255,255,0.15)" },
-  { name: "LinkedIn", handle: "Your Name", Icon: FaLinkedin, color: "#0a66c2", url: socials.linkedin, accent: "rgba(10,102,194,0.25)" },
-  { name: "LeetCode", handle: "@yourusername", Icon: SiLeetcode, color: "#ffa116", url: socials.leetcode, accent: "rgba(255,161,22,0.2)" },
-  { name: "GeeksforGeeks", handle: "@yourusername", Icon: SiGeeksforgeeks, color: "#2f8d46", url: socials.geeksforgeeks, accent: "rgba(47,141,70,0.2)" },
-  { name: "HackerRank", handle: "@yourusername", Icon: SiHackerrank, color: "#00ea64", url: socials.hackerrank, accent: "rgba(0,234,100,0.2)" },
-  { name: "CodeChef", handle: "@yourusername", Icon: SiCodechef, color: "#a47b48", url: socials.codechef, accent: "rgba(164,123,72,0.25)" },
+  { name: "GitHub",  Icon: FaGithub, color: "#ffffff", url: socials.github, accent: "rgba(255,255,255,0.15)" },
+  { name: "LinkedIn", Icon: FaLinkedin, color: "#0a66c2", url: socials.linkedin, accent: "rgba(10,102,194,0.25)" },
+  { name: "LeetCode", Icon: SiLeetcode, color: "#ffa116", url: socials.leetcode, accent: "rgba(255,161,22,0.2)" },
+  { name: "GeeksforGeeks", Icon: SiGeeksforgeeks, color: "#2f8d46", url: socials.geeksforgeeks, accent: "rgba(47,141,70,0.2)" },
+  { name: "HackerRank", Icon: SiHackerrank, color: "#00ea64", url: socials.hackerrank, accent: "rgba(0,234,100,0.2)" },
+  { name: "CodeChef",  Icon: SiCodechef, color: "#a47b48", url: socials.codechef, accent: "rgba(164,123,72,0.25)" },
 ];
 
 export default function CodingProfiles() {
@@ -31,7 +31,7 @@ export default function CodingProfiles() {
               key={p.name}
               href={p.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="prof-card glass"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
