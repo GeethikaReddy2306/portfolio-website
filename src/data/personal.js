@@ -43,6 +43,6 @@ export const socials = {
 // ===============================
 export const emailjsConfig = {
   serviceId: "service_c8h9z9m",
-  templateId: "template_1fk4hl5",
+  templateId: "template_w23bmlw",
   publicKey: "VmWxCunt8hhZAC_X5",
 };

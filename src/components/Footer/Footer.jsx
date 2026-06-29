@@ -24,7 +24,7 @@ export default function Footer() {
           <a href={socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
           <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
           <a href={socials.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
-          <a href={`mailto:${personal.email}`} aria-label="Email"><FiMail /></a>
+          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`} aria-label="Email"><FiMail /></a>
         </div>
       </div>
       <div className="footer-bottom container">

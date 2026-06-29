@@ -124,7 +124,7 @@ export default function Hero() {
           >
             <a href={socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FiGithub /></a>
             <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
-            <a href={`mailto:${personal.email}`} aria-label="Email"><FiMail /></a>
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`} aria-label="Email"><FiMail /></a>
           </motion.div>
         </motion.div>
 
